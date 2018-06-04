@@ -1,3 +1,5 @@
+package Webscrape
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,4 +31,12 @@ public class Manga{
       String url = "";
       String html = download(url);
     }
+  public static void getMangaPage(String html)
+  {
+    String header = "reader max-width\" src=\"";
+    String[] temp = html.split(header);
+    String url = temp[1].substring(0,html.indexOf("\""));
+    
+    
+  }
 }
