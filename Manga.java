@@ -5,10 +5,6 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.*;
 
-/**
- *
- * @author joyce_c
- */
 public class Manga{
   public static String download(String website)
     {
